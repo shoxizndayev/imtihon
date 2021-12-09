@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+    font-family: "Barlow", "Arial", sans-serif;
+}
+
+.container {
+	max-width: 1320px;
+    width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+img {
+	vertical-align: middle;
+	object-fit: cover;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
