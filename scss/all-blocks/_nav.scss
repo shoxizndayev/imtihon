@@ -36,6 +36,10 @@
         display: none;
     }
 
+    .header .header__link {
+        display: none;
+    }
+
     .hamburger {
         display: block;
         border: none;
@@ -72,13 +76,14 @@
     }
 
     .header--active .nav__item {
-        margin-bottom: 32px;
         margin: 0 auto;
+        margin-bottom: 32px;
     }
 
     .header--active .nav__link {
         color: rgba(251, 252, 254, 1);
-        margin-bottom: 32px;
+        font-size: 20px;
+        line-height: 23px;
     }
 
 

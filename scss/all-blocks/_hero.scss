@@ -1,8 +1,23 @@
 .hero .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 75px;
 }
+
+// .hero::before {
+//     z-index: 10;
+//     width: 780px;
+//     height: 780px;
+//     top: -25%;
+//     right: -20%;
+//     position: absolute;
+//     background-image: url(../photo/png/Mask.png);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 780px;
+//     content: " ";
+// }
 
 .hero__heading {
     max-width: 546px;
@@ -25,7 +40,7 @@
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
     border: none;
     padding: 15px 27px;
-    padding-right: 105px;
+    padding-right: 200px;
     border-radius: 24px;
     font-weight: 700;
     font-size: 15px;
@@ -39,7 +54,7 @@
     position: absolute;
     z-index: 10;
     top: 0px;
-    right: 100px;
+    right: 0%;
     text-decoration: none;
     color: rgba(251, 252, 254, 1);
     padding: 15px 25px;
@@ -73,6 +88,58 @@
     mix-blend-mode: normal;
 }
 
-.hero__img {
-    margin-left: 206px;
+@media only screen and (max-width: 787px) {
+    .hero .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__img {
+        order: -1;
+        width: 159px;
+        height: 300px;
+        margin-bottom: 48px;
+    }
+
+    .hero__heading {
+        text-align: center;
+        font-size: 48px;
+        line-height: 56px;
+        max-width: 553px;
+        margin-bottom: 22px;
+    }
+
+    .hero__input {
+        padding-right: 110px;
+        margin-bottom: 22px;
+    }
+
+    .hero__text {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    .hero__heading {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        max-width: 327px;
+    }
+
+    .hero__form {
+        flex-direction: column;
+    }
+
+    .hero__form {
+        align-items: center;
+        width: 327px;
+        right: 0px;
+    }
+    
+    .form__button {
+        position: relative;
+        right: 0%;
+        width: 327px;
+    }
 }

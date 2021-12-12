@@ -1,10 +1,10 @@
 .implement .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .implement__info {
-    margin-left: 125px;
     max-width: 445px;
 }
 
@@ -26,4 +26,37 @@
     color: #36536B;
     mix-blend-mode: normal;
     opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+    .implement .container {
+        flex-direction: column;
+    }
+
+    .implement__img {
+        margin-bottom: 48px;
+    }
+
+    .implement__info {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 465px) {
+    .implement {
+        .implement__img {
+            margin: 0px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .implement__heading {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .implement__text {
+        width: 328px;
+    }
 }

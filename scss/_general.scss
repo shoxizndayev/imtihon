@@ -6,7 +6,7 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -56,9 +56,28 @@ ol {
 
 img {
     vertical-align: middle;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 main {
     flex-grow: 1;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .conveniences__item::before {
+            background-image: url(../photo/png/finances-2x.png);
+        }
+
+        .conveniences__item:nth-child(2n)::before {
+            background-image: url(../photo/png/banking-2x.png);
+        }
+
+        .conveniences__item:nth-child(3n)::before {
+            background-image: url(../photo/png/payments-2x.png);
+        }
 }

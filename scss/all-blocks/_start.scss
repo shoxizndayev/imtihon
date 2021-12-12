@@ -1,0 +1,53 @@
+.start .container {
+    max-width: 1150px;
+    padding-right: 40px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
+
+.start .form__button {
+    top: 0px;
+    right: 0%;
+}
+
+.start__heading {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+}
+
+@media only screen and (max-width: 793px) {
+    .start .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start__heading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .start {
+        .form__button {
+            right: 0%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .start__heading {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .start .hero__input {
+        padding-right: 110px;
+    }
+}
