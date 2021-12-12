@@ -8,6 +8,203 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__left">
+            <a class="header__logo__link"
+            href="./index.html">
+                <img class="header__logo"
+                src="./photo/svg/logo.svg" 
+                alt="a picture of the payap company logo"
+                width="135"
+                height="38"
+                >
+            </a>
+
+            <!-- ==Navbar== -->
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            Pricing
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+
+            <button class="hamburger">
+                <img class="open"
+                src="./photo/svg/hamburger.svg" 
+                alt="Hamburger icon"
+                width="28"
+                height="17"
+                >
+
+                <img class="close"
+                src="./photo/svg/exit.svg" 
+                alt="exit icon"
+                width="22"
+                height="23"
+                >
+            </button>
+
+            <a class="header__link" href="#">
+                Schedule a Demo
+            </a>
+        </div>
+    </header>
+
+    <!-- ==Main== -->
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__left">
+                    <h1 class="hero__heading">
+                        Start building with our APIs for absolutely free.
+                    </h1>
+
+                    <form class="hero__form" 
+                    method="post" 
+                    action="https://echo.htmlacademy.ru/">
+                        <label class="hero__option">
+                            <input class="hero__input" 
+                            placeholder="Enter email address"
+                            type="email" 
+                            name="email" 
+                            required
+                            >
+                        </label>
+
+                        <button class="form__button">Schedule a Demo</button>
+                    </form>
+
+                    <p class="hero__text">
+                        Have any questions?
+                        <strong>
+                            <a class="hero__link" href="#">
+                                Contact Us
+                            </a>
+                        </strong>
+                    </p>
+                </div>
+
+                <img class="hero__img"
+                src="./photo/png/Group 30.png"
+                srcset="./photo/png/Group 30@2x.png 2x, ./photo/png/Group 30.png 1x" 
+                alt="The payment has been processed. The total amount deducted from your account is US $104.90."
+                width="263"
+                height="500"
+                >
+            </div>
+        </section>
+
+        <!-- ==About== -->
+
+        <section class="about">
+            <div class="container">
+                <div class="about__left">
+                    <h2 class="about__heading">
+                        Who we work with
+                    </h2>
+
+                    <p class="about__text">
+                        Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. 
+                    </p>
+
+                    <a class="about__link" href="#">
+                        About Us
+                    </a>
+                </div>
+
+                <div class="about__right">
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <img src="./photo/svg/tesla.svg"
+                            alt="tesla"
+                            width="129"
+                            height="17"
+                            >
+                        </li>
+
+                        <li class="about__item">
+                            <img src="./photo/svg/microsoft.svg"
+                            alt="microsoft logo"
+                            width="145"
+                            height="31"
+                            >
+                        </li>
+
+                        <li class="about__item">
+                            <img src="./photo/svg/hp.svg"
+                            alt="hp  logo"
+                            width="140"
+                            height="27"
+                            >
+                        </li>
+
+                        <li class="about__item">
+                            <img src="./photo/svg/oracle.svg"
+                            alt="oracle logo"
+                            width="131"
+                            height="17"
+                            >
+                        </li>
+
+                        <li class="about__item">
+                            <img src="./photo/svg/google.svg"
+                            alt="google logo"
+                            width="96"
+                            height="33"
+                            >
+                        </li>
+
+                        <li class="about__item">
+                            <img src="./photo/svg/nvidia.svg"
+                            alt="nvidia logo"
+                            width="137"
+                            height="26"
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==implement== -->
+
+        <section class="implement">
+            <div class="container">
+                <img src="./photo/png/code.png" 
+                alt="image with codes"
+                width="445"
+                height="284"
+                >
+
+                <div class="implement__info">
+                    <h3 class="implement__heading">
+                        Easy to implement
+                    </h3>
+
+                    <p class="implement__text">
+                        Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to handle payments functionality with ease.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>

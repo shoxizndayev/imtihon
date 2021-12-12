@@ -1,0 +1,78 @@
+.hero .container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.hero__heading {
+    max-width: 546px;
+    font-family: "DM Serif Display";
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+    color: #36536B;
+    margin-bottom: 36px;
+}
+
+.hero__form {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.hero__input {
+    background-color:  rgba(251, 252, 254, 1);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border: none;
+    padding: 15px 27px;
+    padding-right: 105px;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(54, 83, 107, 1);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.form__button {
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    right: 100px;
+    text-decoration: none;
+    color: rgba(251, 252, 254, 1);
+    padding: 15px 25px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    background-color: rgba(186, 66, 112, 1);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border: none;
+    border-radius: 24px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: rgba(218, 109, 151, 1);
+    }
+}
+
+.hero__text {
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-left: 27px;
+}
+
+.hero__link {
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536B;
+    mix-blend-mode: normal;
+}
+
+.hero__img {
+    margin-left: 206px;
+}

@@ -1,0 +1,29 @@
+.implement .container {
+    display: flex;
+    align-items: center;
+}
+
+.implement__info {
+    margin-left: 125px;
+    max-width: 445px;
+}
+
+.implement__heading {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+    margin-bottom: 24px;
+}
+
+.implement__text {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
